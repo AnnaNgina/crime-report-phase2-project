@@ -1,0 +1,42 @@
+body{
+    background-color: gray;
+}
+.header{
+    background-color: white;
+   border-top: 2px solid black;
+   
+}
+
+#links{
+    text-decoration: none;
+    color: black;
+   
+}
+a{
+    color: #000;
+    float: right;
+    background-color: grey;
+    padding: 10px;
+  
+ 
+
+}
+img{
+    margin-left:16px;
+    float: left;
+    padding-top: 20px;
+    margin-right: 45px;
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+    padding-bottom: 70px;
+   
+
+}
+h3{
+    font-size: x-large;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    color: orange;
+    font-style: italic;
+
+}

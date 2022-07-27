@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import "./comment.css";
+
 
 function Comment (){
     const [values, setValues] = useState ({
@@ -9,9 +11,6 @@ function Comment (){
         email:"",
         comment:""
         
-
-
-
     });
     const handleFirstNameInputChange = (event) => {
         setValues({...values,firstname :event.target.value})
@@ -28,32 +27,35 @@ function Comment (){
     const handleCommentInputChange = (event) => {
         setValues({...values,comment :event.target.value})
     }
+    const handleSubmit= (event) => {
+        event.preventDefault();
+    }
 
     return(
-        <form>
-            <label for ="First Name"> First Name</label><br></br> 
+
+        <div class="form-element">
+            <div id="comment">
+        <form className="form-inputs" onSubmit={handleSubmit}>
+            <label> First Name</label><br></br> 
             <input type="text" onChange={handleFirstNameInputChange} value ={values.firstname} placeholder="write your firstname"/><br></br>
 
-            <label for ="Last Name"> Last Name</label><br></br>
+            <label> Last Name</label><br></br>
             <input type="text" onChange={handleLastNameInputChange} value ={values.lastname} placeholder="write your last name"/><br></br>
 
-            <label for ="phone number"> Phone Number</label><br></br>
-            <input type="phonenumber" onChange={handlePhoneNumberInputChange} value ={values.phonenumber} placeholder="write your phone number" required/><br></br>
+            <label> Phone Number</label><br></br>
+            <input type="text" onChange={handlePhoneNumberInputChange} value ={values.phonenumber} placeholder="write your phone number" required/><br></br>
 
-            <label for ="email"> Email</label><br></br>
-            <input type="email" onChange={handleEmailInputChange} value ={values.email} placeholder="write your email"/><br></br>
+            <label> Email</label><br></br>
+            <input type="text" onChange={handleEmailInputChange} value ={values.email} placeholder="write your email"/><br></br>
             
-            <label for ="comment"> Comment Us</label><br></br>
+            <label> Comment Us</label><br></br>
             <input type="text" onChange={handleCommentInputChange} value ={values.comment} placeholder="write your comment" required/><br></br>
 
             <button type="submit">Submit</button>
 
-
-            
-
         </form>
-
-
+        </div>
+        </div>
     );
 }
 export default Comment;

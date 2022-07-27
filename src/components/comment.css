@@ -1,0 +1,35 @@
+
+.form-element{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSENriMbzVQXhC0tVAD4eNolpjUuP0s2zM_JQ&usqp=CAU");
+    background-repeat: no-repeat;
+}
+#comment{
+    background-image:url ("./images/logo2.jpg");
+    background-color: aliceblue;
+  padding-top: 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  text-align: left;
+  padding-left: 20px;
+  
+
+}  input[type=text], input[type=phonenumber] input[type=email] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border-radius:10px;
+    background:gray;
+}
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
