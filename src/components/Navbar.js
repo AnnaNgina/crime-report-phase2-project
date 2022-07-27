@@ -8,31 +8,13 @@ function Navbar(){
             <nav className="navbar">
                 <img src={logo3} alt='logo'/>
                 </nav>
-
-                <ul className="links">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#reportcase">Report Case</a>
-                        <ul>
-                            
-                        <a href="#fire">Fire Report </a>
-                        <a href="#theft">Theft Report </a>
-                        <a href="#kidnapp">Kidnap Report </a>
-
-                        </ul>
-                        
-                    </li>
-                       
-                    <li>
-                        <a href="#comment">Comment</a>
-                    </li>
-                </ul>
-        
+                <div id="links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#reportcase">Report Case</a>
+                <a href="#comment">Comment</a>
+                <a href="#contact">Contact Us</a>
+            </div>
             </div>
             
             
