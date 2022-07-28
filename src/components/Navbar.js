@@ -1,14 +1,11 @@
 import React from "react";
-import logo from "./images/logo.jpg";
+
 import "./Navbar.css";
 
 function Navbar() {
     return (
 
         <div className="header">
-
-            <img src={logo} alt='logo' height={60} />
-
             <div id="links">
                 <a href="#contact">Contact Us</a>
                 <a href="#comment">Comment</a>

@@ -1,11 +1,8 @@
 
-.form-element{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSENriMbzVQXhC0tVAD4eNolpjUuP0s2zM_JQ&usqp=CAU");
-    background-repeat: no-repeat;
-}
+   
 #comment{
-    background-image:url ("./images/logo2.jpg");
-    background-color: aliceblue;
+  background-image:url ("./images/logo2.jpg");
+  background-color: aliceblue;
   padding-top: 20px;
   box-sizing: border-box;
   border: 2px solid black;

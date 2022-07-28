@@ -34,7 +34,7 @@ function Comment (){
     return(
 
         <div class="form-element">
-            <div id="comment">
+    
         <form className="form-inputs" onSubmit={handleSubmit}>
             <label> First Name</label><br></br> 
             <input type="text" onChange={handleFirstNameInputChange} value ={values.firstname} placeholder="write your firstname"/><br></br>
@@ -55,7 +55,7 @@ function Comment (){
 
         </form>
         </div>
-        </div>
+        
     );
 }
 export default Comment;

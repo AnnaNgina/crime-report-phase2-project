@@ -32,9 +32,8 @@ function Comment (){
     }
 
     return(
-
-        <div class="form-element">
-        
+<nav>
+        <div id="comment">
             <h1> Report A Crime</h1>
             
         <form className="form-inputs" onSubmit={handleSubmit}>
@@ -55,9 +54,13 @@ function Comment (){
 
             <button type="submit">Submit</button>
 
-        </form>
         
+        </form>
+    
         </div>
+        </nav>
+        
+    
         
     );
 }
