@@ -33,7 +33,7 @@ function Comment (){
 
     return(
 <nav>
-        <div id="comment">
+        <div className="report">
             <h1> Report A Crime</h1>
             
         <form className="form-inputs" onSubmit={handleSubmit}>
