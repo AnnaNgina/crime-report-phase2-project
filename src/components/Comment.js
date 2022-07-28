@@ -33,7 +33,7 @@ function Comment (){
 
     return(
 
-        <div class="form-element">
+        <div className="form-element">
     
         <form className="form-inputs" onSubmit={handleSubmit}>
             <label> First Name</label><br></br> 

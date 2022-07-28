@@ -6,11 +6,20 @@ function Home() {
     const [image, setImage] = useState(null)
 
     useEffect(() => {
-        fetch("https://fakerapi.it/api/v1/images?_quantity=1&_type=kittens&_height=300")
+        fetch("http://localhost:3000/case")
             .then(r => r.json())
             .then(data => setImage(data,image))
+            data.forEach(caseObject  => {
+                console.log(caseObject)
+        
+            }
+            )
+      
+        }     
+
+    )      
            
-    }, [])
+    
 
 
     return (
