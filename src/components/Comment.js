@@ -46,6 +46,7 @@ function Comment() {
 
   const listOfSubmissions = submittedData.map((data, index) => {
     return (
+     
       <div key={index}>
         {data.firstName} {data.lastName} {data.phoneNumber}{data.email} {data.reply}
       </div>
@@ -54,6 +55,8 @@ function Comment() {
 
   return (
     <div>
+      <div className="view">
+       <h1> view the cases</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleFirstNameChange} value={firstName} />
         <input type="text" onChange={handleLastNameChange} value={lastName} />
@@ -63,6 +66,7 @@ function Comment() {
         <button type="submit">Submit</button>
       </form>
       {listOfSubmissions}
+    </div>
     </div>
   );
 }

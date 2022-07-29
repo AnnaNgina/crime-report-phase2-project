@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./comment.css";
 
 
-function Comment (){
+function ReportCase (){
     const [values, setValues] = useState ({
         firstname:"",
         lastname:"",
@@ -63,5 +63,6 @@ function Comment (){
     
         
     );
+
 }
-export default Comment;
+export default ReportCase;

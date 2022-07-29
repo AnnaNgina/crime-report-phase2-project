@@ -1,24 +1,29 @@
 
 import React, {useState,useEffect} from "react";
+import logo2 from "./images/logo2.jpg";
+
 
 function Home(){
 
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-      fetch("https://dog.ceo/api/breeds/image/random/3")
+      fetch("http://localhost:3000/case")
         .then((r) => r.json())
         .then((data) => {
-          // setting state in the useEffect callback
+         
           setImages(data.message);
-        },[2]);
+        });
     });
    
     
     
     return(
         <div className="charts">
+            
             <h1>Crime Report System</h1>
+            <img src={logo2} alt='fire report' height={39}/>
+            
 
              {images.map((image) => (
         <img src={image} key={image} alt="pic"/>
