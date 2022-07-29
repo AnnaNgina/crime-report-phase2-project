@@ -4,6 +4,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Comment from "./components/Comment";
 import ReportCase from "./components/ReportCase";
+import "./index.css";
 
 
 
