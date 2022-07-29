@@ -63,7 +63,7 @@ function Comment() {
         <input type="text" onChange={handlePhoneNumberChange} value={phoneNumber} />
         <input type="text" onChange={handleEmailChange} value={email} />
         <input type="text" onChange={handleReplyChange} value={reply} />
-        <button type="submit">Submit</button>
+        {/* <button type="submit">Submit</button> */}
       </form>
       {listOfSubmissions}
     </div>

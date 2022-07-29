@@ -58,6 +58,7 @@ function ReportCase (){
         </form>
     
         </div>
+        
         </nav>
         
     
