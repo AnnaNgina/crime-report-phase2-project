@@ -12,8 +12,7 @@ function About(){
           
             
             <p>Crime Reporting System is to provide an avenue for the residents and police to report and respond to crimes reported through this platform.
-                click on the link to view the steps required to file a complain online. We respond to residence complains immediately.
-                We also give an open platform where the citizens can raise their issues.
+                click on the link to view the steps required to file a complain online. 
             </p>
             <h3>Check for the crime reported .</h3>
         
