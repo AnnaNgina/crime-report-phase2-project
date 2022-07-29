@@ -24,7 +24,7 @@ function Comment (){
     const handleEmailInputChange = (event) => {
         setValues({...values,email :event.target.value})
     }
-    const handleCommentInputChange = (event) => {
+    const handleReplyInputChange = (event) => {
         setValues({...values,comment :event.target.value})
     }
     const handleSubmit= (event) => {
@@ -50,7 +50,7 @@ function Comment (){
             <input type="text" onChange={handleEmailInputChange} value ={values.email} placeholder="write your email"/><br></br>
             
             <label> Comment Us</label><br></br>
-            <input type="text" onChange={handleCommentInputChange} value ={values.comment} placeholder="write your comment" required/><br></br>
+            <input type="text" onChange={handleReplyInputChange} value ={values.reply} placeholder="write your comment" required/><br></br>
 
             <button type="submit">Submit</button>
 
