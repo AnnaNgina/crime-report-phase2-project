@@ -16,13 +16,11 @@ function Home(){
           setImages(data.message);
         });
     });
-   
-    
-    
+  
     return(
         <div className="charts">
             
-            <h1>Crime Report System</h1>
+            
             <img src={logo2} alt='fire report' height={39}/>
             
 

@@ -3,13 +3,17 @@ import fire from "./images/fire.jpg";
 import theft from "./images/theft.jpg";
 import kidnap from "./images/kidnap.jpg";
 import "./Navbar.css";
+ import crime from "./images/crime.jpg";
 
 
 function About(){
+
     return(
+       
+        <div className="about">
+             <img src={crime} alt='fire report' height={900}/> 
         
-        <div id ="about">
-          
+        
             
             <p>Crime Reporting System is to provide an avenue for the residents and police to report and respond to crimes reported through this platform.
                 click on the link to view the steps required to file a complain online. 

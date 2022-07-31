@@ -11,8 +11,8 @@ import "./index.css";
 function App() {
   return (
     <div>
-      <Home/>
       <Navbar/>
+      <Home/>
       <About/>
       <ReportCase/>
       <Comment/>

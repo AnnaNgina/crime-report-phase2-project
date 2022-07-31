@@ -9,15 +9,12 @@ body{
 }
 a{
     color: #000;
-    float: right;
-    background-color: grey;
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-
-  
- 
+    margin: 20px;
+    
 
 }
 img{

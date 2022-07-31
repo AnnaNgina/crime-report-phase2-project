@@ -4,7 +4,7 @@
             "id": 1,
             "imageurl": "/components/images/fire.jpg",
             "type": "Fire Report",
-            "itemdescription": "The crime report is fire , citizens report the location and the cause of the fire"
+            "itemdescription": "The crime report is fire , citizens report the location and the cause of the fire."
         },
         {
             "id": 2,

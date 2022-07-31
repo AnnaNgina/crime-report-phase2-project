@@ -33,3 +33,9 @@
   .report{
     background-color: white;
   }
+  button{
+    background-color:orange;
+    height: 50px;
+   float:center;
+   border-radius: 20px;
+  }

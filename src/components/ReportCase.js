@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./comment.css";
 
 
-function ReportCase (){
+function ReportCase (onAddValue){
     const [values, setValues] = useState ({
         firstname:"",
         lastname:"",
@@ -27,11 +27,32 @@ function ReportCase (){
     const handleReplyInputChange = (event) => {
         setValues({...values,comment :event.target.value})
     }
-    const handleSubmit= (event) => {
-        event.preventDefault();
-    }
+    
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetch("http://localhost:3000/case", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            firstname:"",
+            lastname:"",
+            phonenumber:"",
+            email:"",
+            comment:""
+          })
+        })
+        .then((r) => r.json())
+        .then((newValue) => {
+            onAddValue(newValue);
+            setValues({ ...values, firstname: "", lastname: "", phonenumber: "", email: ""  , comment: ""  });
+          });
+      }
+
 
     return(
+     
 <nav>
         <div className="report">
             <h1> Report A Crime</h1>
@@ -49,8 +70,8 @@ function ReportCase (){
             <label> Email</label><br></br>
             <input type="text" onChange={handleEmailInputChange} value ={values.email} placeholder="write your email"/><br></br>
             
-            <label> Comment Us</label><br></br>
-            <input type="text" onChange={handleReplyInputChange} value ={values.reply} placeholder="write your comment" required/><br></br>
+            <label> Add your complain</label><br></br>
+            <input type="text" onChange={handleReplyInputChange} value ={values.reply} placeholder="write your complain" required/><br></br>
 
             <button type="submit">Submit</button>
 
@@ -61,9 +82,8 @@ function ReportCase (){
         
         </nav>
         
-    
-        
     );
+   
 
 }
 export default ReportCase;
